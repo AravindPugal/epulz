@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* color: #f2f5f7; */
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+body,
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    height: 6rem;
+    width: 100vw;
+    background-color: #131418;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    color: #f2f5f7;
+    height: 10vh;
+}
+
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/*Styling logo*/
+
+.logo {
+    width: 15vw;
+    padding: 1vh 1vw;
+    padding-top: 3.4vh;
+    text-align: center;
+}
+
+
+/*Styling Links*/
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 88vw;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    margin: 0 0.7vw;
+}
+
+.nav-links li a:hover {
+    color: #61DAFB;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a:hover::before {
+    width: 80%;
+}
+
+
+/*Styling Hamburger Icon*/
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+/* header  */
+
+.move-down {
+    height: 11vh;
+}
+
+.header {
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+    font-size: 1.8vw;
+    margin-left: 2vw;
+}
+
+.tamilnadu-logo,
+.college-logo {
+    width: 15vw;
+}
+
+.tamilnadu-logo {
+    padding-left: 5vw;
+}
+
+.tamilnadu-img {
+    height: 18vh;
+    width: 8vw;
+    position: relative;
+    left: 20%;
+}
+
+.college-img {
+    height: 18vh;
+    width: 9vw;
+    position: relative;
+    left: 10%;
+}
+
+.college {
+    width: 60vw;
+    text-align: center;
+}
+
+.college-name h1 {
+    padding: 1vh;
+}
+
+
+/* hero section */
+
+.hero-section {
+    color: #F9F3EE;
+    height: 70vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("dept.jpg");
+    background-repeat: no-repeat;
+    /* Add the blur effect 
+    filter: blur(8px);
+    -webkit-filter: blur(4px);*/
+    background-size: 100% 100%;
+    margin-top: 0.6%;
+}
+
+.dptname {
+    color: #F9F3EE;
+    text-align: center;
+    font-size: 3vw;
+    padding: 5% 0% 1% 0%;
+}
+
+.dptname1 {
+    color: #F9F3EE;
+    text-align: center;
+    font-size: 3vw;
+}
+
+.dptname2 {
+    padding: 3% 0% 3% 0%;
+    color: #F9F3EE;
+    text-align: center;
+    font-size: 3vw;
+}
+
+.dptname3 {
+    color: #F9F3EE;
+    text-align: center;
+    font-size: 3vw;
+}
+
+.btn-container {
+    width: 100%;
+    margin-top: 6vh;
+}
+
+.register-button {
+    height: 5vh;
+    width: 10vw;
+    border: 3px solid #000000;
+    background-color: rgb(255, 255, 255);
+    color: #131418;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 3vh;
+}
+
+.register-button a {
+    color: rgb(8, 6, 6);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.register-button:hover {
+    border: 3px solid #ffffff;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 3vh;
+}
+
+.register-button:hover a {
+    color: #fff9f9;
+}
+
+.register-button a {
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+
+/* events */
+
+#events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 1300px;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+figure {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    mix-blend-mode: luminosity;
+}
+
+figure h1 {
+    font-size: 22pt;
+    line-height: 32pt;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+figure figcaption p {
+    font-size: 10pt;
+    line-height: 20pt;
+    margin: 10px 0px 20px 0px;
+    text-align: center;
+}
+
+figure a {
+    text-decoration: none;
+    background: black;
+    color: white;
+    padding: 5px 12px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+figure::before {
+    position: absolute;
+    filter: blur(40px) saturate(120%) brightness(1.1);
+    font-size: 440pt;
+    content: "🥪";
+    z-index: -1;
+    animation: rotate 12s linear infinite;
+}
+
+figure::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    content: "";
+    background: var(--accent);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(-360deg);
+    }
+}
+
+figure:nth-child(1) {
+    --accent: #ffeb70;
+}
+
+figure:nth-child(2) {
+    --accent: #fd560a;
+}
+
+figure:nth-child(2)::before {
+    content: "🌈";
+}
+
+figure:nth-child(3) {
+    --accent: #1eddfe;
+}
+
+figure:nth-child(3)::before {
+    content: "🍧";
+}
+
+figure:nth-child(4) {
+    --accent: #cdf9ff;
+}
+
+figure:nth-child(4)::before {
+    content: "🏡";
+}
+
+figure:nth-child(5) {
+    --accent: #1296dc;
+}
+
+figure:nth-child(5)::before {
+    content: "🌃";
+    font-size: 340pt;
+}
+
+figure:nth-child(6) {
+    --accent: #f50d21;
+}
+
+figure:nth-child(6)::before {
+    content: "🦜";
+    font-size: 640pt;
+}
+
+
+/*Stying for small screens*/
+
+@media screen and (max-width: 800px) {
+    .logo {
+        padding-top: 4.4vh;
+        padding-left: 3vw;
+        margin-left: 1.5vw;
+        width: 40vw;
+    }
+    nav {
+        position: fixed;
+        z-index: 3;
+    }
+    .dptname,
+    .dptname1,
+    .dptname2,
+    .dptname3 {
+        font-size: 5.5vw;
+    }
+    .dptname3 {
+        padding: 0% 2%;
+    }
+    .hero-section {
+        height: 35vh;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+    .nav-links {
+        position: fixed;
+        background: #131418;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.7s;
+    }
+    .nav-links li:nth-child(5) {
+        transition: all 0.5s ease 0.8s;
+    }
+    .nav-links li:nth-child(6) {
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+    .nav-links li:nth-child(7) {
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+    li.fade {
+        opacity: 1;
+    }
+    .college-img,
+    .tamilnadu-img {
+        height: 70px;
+        width: 70px;
+    }
+    .header {
+        font-size: 2.5vw;
+    }
+    .college-img,
+    .tamilnadu-img {
+        position: static;
+    }
+    .register-button {
+        height: 3vh;
+        width: 25vw;
+        padding-top: 1vh;
+    }
+    .register-button a {
+        font-size: 4vw;
+    }
+    .btn-container {
+        margin-top: 2.3vh;
+    }
+}
+
+
+/*Animating Hamburger Icon on Click*/
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    transition: all 0.7s ease;
+    width: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
