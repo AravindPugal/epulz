@@ -189,7 +189,7 @@ a:-webkit-any-link {
     color: #F9F3EE;
     text-align: center;
     font-size: 3vw;
-    font-family: cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .btn-container {
@@ -426,7 +426,7 @@ figure:nth-child(6)::before {
     -webkit-transition: opacity ease-out 0.5s;
     transition: opacity ease-out 0.5s;
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     ;
 }
 
@@ -499,13 +499,21 @@ figure:nth-child(6)::before {
     background-color: #F5F8FA;
     padding: 3vw;
     padding-top: 4vh;
-    text-align: center;
+    text-align: justify;
 }
 
 .text-container p {
     line-height: 3.5vh;
     font-family: 'Slab 27px', serif;
     font-size: 1.1vw;
+}
+
+.text-container h1 {
+    text-align: center;
+}
+
+.mission {
+    margin-left: 6vw;
 }
 
 .about-header {
@@ -576,7 +584,7 @@ figure:nth-child(6)::before {
 }
 
 .instruction p {
-    line-height: 3.5vh;
+    line-height: 4vh;
     font-family: 'Slabo 27px', serif;
     font-size: 1.1vw;
 }
@@ -685,6 +693,10 @@ spam {
     font-weight: 600;
 }
 
+.staff-coordinator h1 {
+    font-weight: 600;
+}
+
 
 /*Stying for small screens*/
 
@@ -694,6 +706,9 @@ spam {
         padding-left: 3vw;
         margin-left: 1.5vw;
         width: 40vw;
+    }
+    .mission {
+        text-align: justify;
     }
     figure img {
         width: 80%;
