@@ -505,7 +505,7 @@ figure:nth-child(6)::before {
 .text-container p {
     line-height: 3.5vh;
     font-family: 'Slab 27px', serif;
-    font-size: 1.3em;
+    font-size: 1.1vw;
 }
 
 .about-header {
@@ -578,7 +578,7 @@ figure:nth-child(6)::before {
 .instruction p {
     line-height: 3.5vh;
     font-family: 'Slabo 27px', serif;
-    font-size: 1.3em;
+    font-size: 1.1vw;
 }
 
 .instruction {
@@ -642,6 +642,12 @@ figure:nth-child(6)::before {
     padding: 1.5vh;
 }
 
+.contact-head h1,
+.inst-head h1,
+.about-header h1 {
+    font-weight: 900;
+}
+
 .student-coordinator {
     display: flex;
     width: 100%;
@@ -675,6 +681,10 @@ figure:nth-child(6)::before {
     text-align: center;
 }
 
+spam {
+    font-weight: 600;
+}
+
 
 /*Stying for small screens*/
 
@@ -705,7 +715,7 @@ figure:nth-child(6)::before {
         margin-top: 6.5%;
     }
     .text-container p {
-        font-size: 1 em;
+        font-size: 5vw;
     }
     .dptname,
     .dptname1,
@@ -820,11 +830,24 @@ figure:nth-child(6)::before {
         width: 80vw;
         margin: auto;
     }
+    .instruction p,
+    .coordinators h1 {
+        font-size: 5vw;
+    }
     .coordinators {
         width: 80vw;
     }
     nav {
         z-index: 10;
+    }
+    .about-header {
+        width: 80%;
+    }
+    .inst-head {
+        width: 80%;
+    }
+    .contact-head {
+        width: 80%;
     }
 }
 
